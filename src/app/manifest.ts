@@ -1,0 +1,29 @@
+import { MetadataRoute } from 'next'
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: 'معهد اكسفورد للذكاء الاصطناعي',
+    short_name: 'معهد اكسفورد',
+    description: 'معهد رائد في تدريب الذكاء الاصطناعي والسرد القصصي باستخدام منهجية ماكنزي المتقدمة',
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#111827',
+    theme_color: '#3B82F6',
+    icons: [
+      {
+        src: '/favicon-192x192.png',
+        sizes: '192x192',
+        type: 'image/png',
+      },
+      {
+        src: '/favicon-512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
+      },
+    ],
+    lang: 'ar',
+    dir: 'rtl',
+    categories: ['education', 'training', 'artificial-intelligence'],
+  }
+}
+
